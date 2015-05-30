@@ -1,0 +1,116 @@
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 200px;
+  min-height: 100%;
+  overflow:hidden;
+}
+
+.v-center {
+  margin-top: 3%;
+}
+
+#association {
+  height: 52px;
+}
+
+#triple {
+  font-size: 46px;
+}
+
+.jumbotron .lead {
+  color: #d9230f;
+}
+
+.test {
+  min-width: 95%;
+}
+
+.test .lead {
+  font-size: 14px;
+}
+
+ul.rat-pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+  width: 85%;
+  min-width: 300px;
+  margin:0 auto;
+}
+
+.rat-pager li {
+  display: inline;
+}
+
+.rat-pager .previous a {
+  float: left;
+}
+
+.rat-pager .next a {
+  float: right;
+}
+
+#qa > div {
+  width: 80%;
+  min-width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  height: 52px;
+}
+
+#success, #show-answer {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#success {
+  cursor: default;
+}
+
+.jumbotron {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.footer {
+  margin-top: 5%;
+}
+
+.footer > div {
+  border-top: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  background-color: #f4f4f4;
+}
+
+.footer h4 {
+    font-weight: bold;
+    margin-top: 6%;
+}
+
+.footer p {
+  padding: 5px 20px;
+}
+
+.bottom {
+  border-top: 1px solid #e3e3e3;
+  background-color: #f4f4f4;
+  padding: 5px 0;
+}
+
+@media (min-width: 768px) {
+  #qa > div {
+    width: 380px;
+  }
+  ul.rat-pager {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer > div {
+    min-height: 500px;
+  }
+}

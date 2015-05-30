@@ -1,0 +1,6 @@
+{
+    :rat-associations "resources/associations.txt"
+    :rat-analytics "true"
+    :rat-host "0.0.0.0"
+    :rat-port "3000"
+}

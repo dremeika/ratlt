@@ -1,0 +1,106 @@
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Silpnų asociacijų testas</title>
+    <link href="/assets/css/bootstrap-simplex.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <script src="/assets/js/jquery-1.11.2.min.js"></script>
+    <script src="/assets/js/rat.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<script id="analytics" type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2908148-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div class="container-full">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="jumbotron">
+                <h1>Silpnų asociacijų testas</h1>
+                <p class="lead">Matuoja kūrybines galias, šeštą jausmą ir įžvalgumą</p>
+            </div>
+        </div>
+    </div>
+    <div class="row test">
+        <div class="col-lg-12 text-center v-center">
+            <h1 id="triple" class="text-center">${w1} ${w2} ${w3}</h1>
+        </div>
+        <p class="lead text-center">Žemiau įveskite susijusį žodį</p>
+        <div class="col-lg-12" id="qa">
+            <div id="question-block" class="input-group">
+                <input id="association" class="form-control input-lg" type="text" placeholder="Susijęs žodis..." autocomplete="off" autofocus="true">
+                <input id="correct" type="hidden">
+                <input id="id" type="hidden">
+                <div class="input-group-btn">
+                    <button id="show-answer" title="Rodyti teisingą asociaciją" class="btn btn-lg btn-danger" type="button">&nbsp;Nežinau&nbsp;</button>
+                    <button id="success" class="btn btn-lg btn-success" type="button" style="display: none;">Teisingai!</button>
+                </div>
+            </div>
+            <div id="answer-block" class="input-group" style="display:none;">
+                <h2 id="answer">Teisingas atsakymas: <strong></strong></h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center v-center">
+            <ul class="rat-pager">
+                <li class="previous"><a title="Ankstesnės asociacijos" href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-step-backward"></span></a></li>
+                <li class="random"><a title="Atsitiktinės asociacijos" href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-random"></span></a></li>
+                <li class="next"><a title="Kitos asociacijos" href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-step-forward"></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="col-lg-4">
+            <h4 class="text-center">Silpnų asociacijų testas</h4>
+            <p>Silpnų asociacijų testas yra skirtas žmogaus kūrybiniam potencialui nustatyti.
+                Testas dažniausiai būna sudarytas iš keliasdešimt užduočių ir trunka keliasdešimt minučių.</p>
+            <p>Kiekviena užduotis susideda iš keturių žodžių - trys rodomi, o vieną reikia atspėti.</p>
+            <p>Testą 1962 metais sukūrė profesorius <a href="http://en.wikipedia.org/wiki/Sarnoff_A._Mednick" target="_blank">Sarnoff A.Mednick</a>. Jo duomenimis, testo patikimumas yra 70%.</p>
+            <p>Šiame puslapyje testas neskaičiuoja ir nevertina kūrybingumo koeficiento. Užduotys skirtos tiesiog gerai praleisti laiką ir pamankštinti smegenis.</p>
+            <p>Wikipedia: <a href="http://en.wikipedia.org/wiki/Remote_Associates_Test" target="_blank">Remote Associates Test</a></p>
+        </div>
+        <div class="col-lg-4">
+            <h4 class="text-center">Lietuviška versija</h4>
+            <p>Mano manymu, šios užduotys daugeliu atveju yra sunkesnės nei panašių angliškų asociacijų. Turėjau pasirinkti - padaryti lengvesnes arba sunkesnes nei angliškos. Nusprendžiau lietuviškoms smegenims duoti daugiau darbo.</p>
+            <p>Asociatyviose žodžių porose dažniausiai vienas iš žodžių eina pažyminiu, todėl jie tarpusavyje būna suderinti linksniu. Užduotyse palikus linksnius arba įvardžiuotines formas tokias, kokios jos yra asociatyviose porose, atspėti ketvirtą žodį būtų pernelyg lengva. Pavyzdžiui, užtektų vieno žodžio <em>pasaulinis</em>, jog kiltų asociacija <em>karas</em>.</p>
+            <p>Todėl, siekiant įdomumo ir automatiškai sunkinant užduotis, žodžiai normalizuoti taip:
+                <ul>
+                    <li>Naudojamos tik neįvardžiuotinės formos;</li>
+                    <li>Laipsniuojamos kalbos dalys naudojamos tik nelyginamuoju laipsniu;</li>
+                    <li>Linksniuojamos kalbos dalys pateiktos vienaskaitos vardininiko linksniu;</li>
+                    <li>Veiksmažodžiai naudojami tik bendraties forma.</li>
+                </ul></p>
+            <p>Trumpai tariant, lietuviškos užduotys sunkesnės, nes kalbame viena archaiškiausių indoeuropiečių kalbų.</p>
+        </div>
+        <div class="col-lg-4">
+            <h4 class="text-center">Šaltiniai</h4>
+            <p>Ruošdamas žodžių kvartetus rėmiausi moksliniu straipnsiu <a href="http://groups.psych.northwestern.edu/mbeeman/pubs/BRMIC_2003_insight_norms.pdf" target="_blank">Normative data for 144 compound remote associate problems</a> ir panaudojau pavienius žodžius iš angliško testo <a href="http://www.remote-associates-test.com/" target="_blank">Remote Associates Test</a>.</p>
+            <p>Užduotys nėra pažodiniai vertimai iš kitos kalbos, nes <a href="http://en.wikipedia.org/wiki/Cerebral_cortex#Association_areas" target="_blank">asociatyvinis mąstymas</a> yra stipriai susijęs su kalba ir kultūra, todėl dauguma užduočių tiesiog neturėtų prasmės išvertus į kitą kalbą.</p>
+            <p>Asociacijoms rasti naudojau lietuviškas <a href="http://en.wikipedia.org/wiki/Collocation" target="_blank">kolokacijas</a>, apskaičiuotas su <a href="http://mahout.apache.org/" target="_blank">Apache Mahout</a>.</p>
+            <p>Užduotys yra skirtingo sunkumo, bet visos įveikiamos - nėra nei vienos, kurios savarankiškai neišsprendė bent vienas žmogus.</p>
+        </div>
+    </div>
+    <div class="row bottom">
+        <div class="col-lg-12 text-center">
+            Pagamino: <a href="mailto:donatas.remeika@gmail.com">Donatas Remeika</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
