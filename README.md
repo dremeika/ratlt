@@ -1,18 +1,31 @@
 # Lithuanian Remote Associates Test
 
-[http://silpnasrysys.lt](http://silpnasrysys.lt)
+![silpnasrysys.lt preview](rat-lt.png)
+
+Previously available at [http://silpnasrysys.lt](http://silpnasrysys.lt)
 
 ## About
 
 Wikipedia: [Remote Associates Test](http://silpnasrysys.lt/)
 
 ## Running 
-    
-    $ cp dotlein-env .lein-env
-    $ lein do clean, cljsbuild [once or auto]
-    $ lein repl
-    => (use 'rat.core)
-    => (run "localhost" 3000)
+
+Option 1:
+
+```commandline
+$ cp dotlein-env .lein-env
+$ lein do clean, cljsbuild [once or auto]
+$ lein repl
+=> (use 'rat.core)
+=> (run "localhost" 3000)
+```
+
+Option 2:
+
+```commandline
+$ lein do clean, cljsbuild once, uberjar
+$ java -jar target/uberjar/rat-0.1.0-standalone.jar
+```
 
 Go to: http://localhost:3000
 

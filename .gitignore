@@ -10,3 +10,6 @@ pom.xml.asc
 *.jar
 /.lein-*
 /.nrepl-port
+/.clj-kondo
+/.lsp
+/.portal
